@@ -47,20 +47,20 @@ endif()
 
 include(FetchContent)
 FetchContent_Declare(nlohmann_json
-    URL https://github.com/nlohmann/json/archive/refs/tags/v3.11.3.zip
+    URL https://ghfast.top/https://github.com/nlohmann/json/archive/refs/tags/v3.11.3.zip
 )
 set(NANOFLANN_BUILD_EXAMPLES OFF)
 set(NANOFLANN_BUILD_TESTS OFF)
 FetchContent_Declare(nanoflann
-    URL https://github.com/jlblancoc/nanoflann/archive/refs/tags/v1.5.5.zip
+    URL https://ghfast.top/https://github.com/jlblancoc/nanoflann/archive/refs/tags/v1.5.5.zip
 )
 FetchContent_Declare(cxxopts
-    URL https://github.com/jarro2783/cxxopts/archive/refs/tags/v3.2.0.zip
+    URL https://ghfast.top/https://github.com/jarro2783/cxxopts/archive/refs/tags/v3.2.0.zip
 )
 FetchContent_MakeAvailable(nlohmann_json nanoflann cxxopts)
 if((GPU_RUNTIME STREQUAL "CUDA") OR (GPU_RUNTIME STREQUAL "HIP"))
     FetchContent_Declare(glm
-        URL https://github.com/g-truc/glm/archive/refs/tags/1.0.1.zip
+        URL https://ghfast.top/https://github.com/g-truc/glm/archive/refs/tags/1.0.1.zip
     )
     FetchContent_MakeAvailable(glm)
 endif()
